@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+  
+<!-- Using Javascript and DOM fecthing the code in browser -->
+
+    <!--
+        <div id="name"></div>  
+        
+    <script> 
+    const listen_heading=document.getElementById("name");
+    const ele=document.createElement("h1")
+    const data=document.createTextNode("Hello World!")
+    ele.append(data);
+    listen_heading.append(ele);
+    </script> -->
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Using React feching the code in Browser    -->
+
+    <div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+    const cr_head=React.createElement("h1",{},"Hello World From React!");
+    const root=ReactDOM.createRoot(document.getElementById("root"));
+    root.render(cr_head);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
