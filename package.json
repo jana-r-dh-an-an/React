@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is React Learning_react",
   "scripts": {
-    "start": "parcel Boxes_Learn/index.html",
-    "build":"parcel build Boxes_Learn/index.html",
+    "start": "parcel BASIC_REACT_PROPS_STATE/index.html",
+    "build":"parcel build BASIC_REACT_PROPS_STATE/index.html",
     "test": "jest"
   },
   "repository": {

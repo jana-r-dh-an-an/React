@@ -5,6 +5,7 @@ import Nested from './components/Header/Nested';
 import { CORE_CONCEPTS } from './components/Header/data';
 import { EXAMPLES } from './components/Header/Example';
 import Box from './components/Header/Box';
+import RoundBox from './components/Header/RoundBox';
 
 
 function App() {
@@ -12,9 +13,6 @@ const[selectedTopic, selectedArea]=useState('components')
   function handleSelect(data){
     selectedArea(data);
     // console.log(data);
-
-    
-
   }
   const [boxes, setBoxes] = useState([]);
 
@@ -26,7 +24,16 @@ const[selectedTopic, selectedArea]=useState('components')
     setBoxes([...boxes, newBox]);
   };
 
-  const[rectBoxes, setRoundBox]=useState([]);
+  const [box1, setRoundBox]=useState([]);
+
+  const addBox1 = () => {
+    const newBox1 = {
+      id: box1.length + 1
+    };
+    setRoundBox([...box1, newBox1]);
+  };
+
+  
 
 
  
@@ -80,6 +87,18 @@ const[selectedTopic, selectedArea]=useState('components')
     </div>
         </section>
 
+
+        <section>
+          <div>
+          <button onClick={addBox1}>Add-Box</button>
+          </div>
+          <div>
+        {box1.map((box) => (
+          <RoundBox key={box.id} id={box.id} />
+        ))}
+        {<RoundBox id="newBox" />}
+      </div>
+        </section>
       </main>
       
     </div>
