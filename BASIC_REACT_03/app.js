@@ -18,31 +18,24 @@
 
 //myTask--002
 
-const create_component=React.createElement('div',{class:"parent_class"},[
-    React.createElement('div',{class:"sub_parent"},[
-       React.createElement('p' ,{class:"Para_1"},"this is under sub_parent_para"),
-       React.createElement('h2',{class:"parent_2"},"this is under parent and heading")
-    ]),
-    React.createElement('div',{class:"sub_parent"},[
-        React.createElement('p' ,{class:"Para_1"},"this is under sub_parent_para"),
-        React.createElement('h2',{class:"parent_2"},"this is under parent and heading")
-     ])
+import React from "react";
+import  ReactDOM  from "react-dom/client";
 
-]);
+
 
 const create_component2=React.createElement('div',{class:"parent_class"},[
     React.createElement('div',{class:"sub_parent"},[
-       React.createElement('p' ,{class:"Para_1"},"this is under sub_parent2_para"),
-       React.createElement('h2',{class:"parent_2"},"this is under parent2 and heading")
+       React.createElement('p' ,{class:"Para_1"},"jana this is under sub_parent2_para"),
+       React.createElement('h2',{class:"parent_2"},"ohh this is under jana parent2 and heading")
     ]),
     React.createElement('div',{class:"sub_parent"},[
         React.createElement('p' ,{class:"Para_1"},"this is under sub_parent2_para"),
-        React.createElement('h2',{class:"parent_2"},"this is under parent2 and heading")
+        React.createElement('h2',{class:"parent_2"},"this jana is under parent2 and heading")
      ])
 
 ]);
 
-const root_rendering=ReactDOM.createRoot(document.getElementById("main"));
+
 const root_rendering2=ReactDOM.createRoot(document.getElementById("main"));
-root_rendering.render(create_component);
+
 root_rendering2.render(create_component2);
