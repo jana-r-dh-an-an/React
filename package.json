@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is React Learning_react",
   "scripts": {
+    "start": "parcel Boxes_Learn/index.html",
+    "build":"parcel build Boxes_Learn/index.html",
     "test": "jest"
   },
   "repository": {

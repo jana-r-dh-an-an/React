@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 3rem;
+    background-color: #2d2c2c;
+    color: #959090;
+}
+
+.product {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #e51111;
+    color: #fffcfc;
+    border-radius: 8px;
+}
+
+.product h2,
+.product p {
+    margin: 0.5rem 0;
+}
+
+.price {
+    font-size: 0.75rem;
+    color: #bab6b6;
+}
+article{
+    background-color: #959090;
+}
